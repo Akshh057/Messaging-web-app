@@ -1,0 +1,113 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 90vh;
+    min-width: 50vw;
+}
+.chat__header{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid lightgray;
+    background-color: #4d5dfb;
+    background-image: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%);
+    color:white;
+    flex-wrap: wrap;
+    
+}
+.chat__headerInfo{
+    flex: 1;
+    padding-left: 20px;
+}
+.chat__headerInfo> h2{
+    font-size: 20px;
+     margin-bottom: 1px;
+     font-weight: 400;
+}
+.chat__headerInfo >p{
+    font-size: 12px;
+    color:white;
+
+}
+.chat__body{
+    flex: 1;
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+    overflow: scroll;
+    flex-wrap: wrap;
+}
+.chat__message{
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    flex-wrap: wrap;
+  
+}
+.p1{
+    word-break: break-all;
+}
+.chat__timestamp{
+    margin-left: 10px;
+    font-size: xx-small;
+}
+.chat__name{
+    position: absolute;
+    top: -15px;
+    font-weight: 800;
+    font-size: xx-small;
+}
+.chat__receiver{
+    margin-left: auto;
+    background-color: rgba(225, 245, 254,1.0); 
+}
+.chat__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgray;
+    flex-wrap: wrap;
+}
+.chat__footer > form{
+    flex: 1;
+    display: flex;
+}
+.chat__footer > form > input{
+    margin-left: 10px;
+    flex: 0.98;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    outline-width: 0;
+}
+.chat__footer > form > button{
+    border: none;
+    outline-width: 0;
+    color:rgba(0, 145, 234,1.0);
+}
+.dp{
+    position: relative;
+    right: 60px;
+}
+@media(max-width:430px){
+    .chat{
+        /* display: none; */
+    
+        height: 100vh;
+        width: 100%;
+        /* width: 100vw; */
+    }
+    .chat__footer > form > input{
+        margin-left: 8px;
+        flex: 0.95;
+    }
+}

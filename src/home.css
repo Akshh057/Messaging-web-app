@@ -1,0 +1,25 @@
+.main__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dadbd3;
+
+}
+.home__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ededed;
+    /* margin-top: -50px; */
+   
+    width: auto;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75); 
+}
+@media(max-width:450px)
+{
+    .home__div{
+        height: 100%;
+        width: 100%;
+    }
+}
